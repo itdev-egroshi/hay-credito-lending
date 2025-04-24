@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="libs/wow/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <title>MFO Spain</title>
+</head>
+<body class="">
+
+<header class="">
+    <div class="wrapper">
+        <img  onclick="window.open('index.html', '_blank')" class="logo" src="img/logo.svg" alt="logo">
+
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Para ti </a></li>
+                <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                <li><a  href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">Área cliente</button>
+
+        <div class="header-menu-btn">
+            <button class="lines-button x">
+                <span class="lines"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="side-menu hide">
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Para ti </a></li>
+                <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">Área cliente</button>
+    </div>
+</header>
+
+
+<section class="tracking-code-page add-border">
+    <h2>Introduce tu código de seguimiento de la solicitud</h2>
+
+    <div class="wrapper">
+        <input placeholder="Código de solicitud" type="text" id="tracking-code-input">
+        <button id="tracking-code-search">
+            <img src="img/tracking-code-search.svg" alt="search">
+        </button>
+    </div>
+
+    <div class="violation-chat hide">
+        <div class="content-wrapper">
+            <div class="chat-user-info chat-info">
+                <img src="img/user-profile.svg" alt="img">
+                <div class="text">Solicitud nº ХХХХХХХХХ</div>
+            </div>
+            <div class="chat-user-text chat-text-field">
+                Lorem ipsum dolor sit amet consectetur. Quis sed massa egestas diam et odio velit. Mi morbi faucibus
+                tincidunt diam mattis fermentum. Aliquam at sed diam in eleifend. Sit quam ac arcu pellentesque mattis
+                lacus amet egestas orci. Sed sit at a blandit aliquet ac nulla amet mattis. Scelerisque arcu ac mauris
+                diam massa et sed cursus massa.
+
+                Dolor ac magnis malesuada ut leo pulvinar. Lacus tristique dui mauris potenti suspendisse ut aliquam.
+                Tempus morbi senectus fermentum sociis molestie feugiat bibendum arcu. Integer sed consectetur urna nunc
+                eu pellentesque aliquet cras.
+            </div>
+            <div class="chat-support-info chat-info">
+                <div class="text">Hay Credito</div>
+                <img src="img/support-profile.svg" alt="img">
+            </div>
+            <div class="chat-support-text chat-text-field">
+                Dolor ac magnis malesuada ut leo pulvinar. Lacus tristique dui mauris potenti suspendisse ut aliquam.
+                Tempus morbi senectus fermentum sociis molestie feugiat bibendum arcu. Integer sed consectetur urna nunc
+                eu pellentesque aliquet cras.
+            </div>
+
+            <div class="textarea-wrapper">
+                <div class="chat-status">La solicitud no es válida</div>
+
+                <textarea placeholder="Introduce el texto" name="" id="" cols="30" rows="10"></textarea>
+
+                <div class="action-btns-wrapper">
+                    <div class="file-upload">
+                        <label>
+                            <input type="file" name="file" id="file-input">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5.5V19.5C12 20.6046 11.1046 21.5 10 21.5C8.89543 21.5 8 20.6046 8 19.5V6C8 3.79086 9.79086 2 12 2C14.2091 2 16 3.79086 16 6V15"
+                                      stroke="#232C39" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                    <button id="sent-chat-message">
+                        <img src="img/tracking-code-search.svg" alt="send">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="footer-text" href="how-it-works.html">Como funciona?</a></li>
+                    <li><a class="footer-text" href="faq.html">Preguntas frecuentes</a></li>
+                    <li><a class="footer-text" href="blog.html">Blog</a></li>
+                    <li><a class="footer-text" href="contacts.html">Contactar</a></li>
+                    <li><a class="footer-text" href="violations.html">Canal de denuncias</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <h4>Datos de contacto</h4>
+                <ul class="contacts-list">
+                    <li class="footer-text">Teléfono: ххххх ххх</li>
+                    <li class="footer-text">Correo electrónico: info@poshta.es</li>
+                    <li class="footer-text">Horario:</li>
+                    <li class="footer-text">Lunes a viernes: 8:00 - 19:00</li>
+                    <li class="footer-text">Sábado: 8:00 - 15:00</li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="footer-text">Dirección: Calle, código postal, Ciudad, País</div>
+
+                <ul class="links-list">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Сódigo Ético</a></li>
+                    <li><a href="#">Formulario de desistimiento</a></li>
+                    <li><a href="#">Canal de denuncias</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="all-rights">© 2024 - Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<script src="js/header.js"></script>
+<script src="libs/wow/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="libs/wow/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+    <title>MFO Spain</title>
+</head>
+<body class="">
+
+
+<div class="cookie-content hide">
+    <div class="container">
+        <div class="wrapper">
+            <img src="img/cookie-img.svg" alt="img">
+            <div class="content-wrapper">
+                <div class="name">Configuración de cookies</div>
+                <div class="text">
+                    Las cookies son importantes para ti, influyen en tu experiencia de navegación.
+                    Usamos cookies analíticas, de personalización y publicitarias (propias y de terceros) para hacer
+                    perfiles basados en hábitos de navegación y mostrarte contenido personalizado.
+                    Para más información, consulta nuestra <a href="#">política de cookies.</a>
+
+                    <div class="btns-wrapper">
+                        <div class="btn">Aceptar</div>
+                        <div class="btn">Declinar</div>
+                        <div class="btn transparent">Configurar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="backdrop hide"></div>
+
+<div class="form-bg-container">
+    <section class="first-screen form-bg-screen">
+
+
+
+        <header class="">
+            <div class="wrapper">
+                <img onclick="window.open('index.html', '_blank')" class="logo" src="img/logo.svg" alt="logo">
+
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Para ti </a></li>
+                        <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                        <li><a  href="faq.html">Preguntas frecuentes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="contacts.html">Contactos</a></li>
+                    </ul>
+                </nav>
+
+                <button class="btn">Área cliente</button>
+
+                <div class="header-menu-btn">
+                    <button class="lines-button x">
+                        <span class="lines"></span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="side-menu hide">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Para ti </a></li>
+                        <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                        <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="contacts.html">Contactos</a></li>
+                    </ul>
+                </nav>
+
+                <button class="btn">Área cliente</button>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <div class="text-wrapper">
+                <h1><span style="color: #CCFF00">Dinero</span> al alcance
+                    de un “clic”</h1>
+                <div class="text">Obtén tu dinero en minutos, sin esperas ni complicaciones</div>
+                <button class="btn left-part">Solicitar</button>
+            </div>
+
+            <div class="calc-wrapper ">
+
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="calculator">
+
+                                <div class="calc-name">🌶 Primer Préstamo1</div>
+
+                                <div class="calc-content">
+                                    <div class="condition-wrapper credit-amount">
+                                        <div class="condition-name">Importe del préstamo</div>
+                                        <input value="200 €" min="50" max="500" type="text"
+                                               class="calculator-amount-input"
+                                        >
+                                        <input type="range" min="50" max="500" step="10"
+                                               class="calculator-amount-range-input">
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">min. 50 €</div>
+                                            <div class="calculator-text">máx. 500 €</div>
+                                        </div>
+                                    </div>
+                                    <div class="condition-wrapper credit-date">
+                                        <div class="condition-name">Plazo</div>
+                                        <input value="12 días" min="5" max="30" type="text"
+                                               class="calculator-date-input"
+                                        >
+                                        <input type="range" min="5" max="30"
+                                               class="calculator-date-range-input"
+                                        >
+                                        <div class="condition-values-range">
+                                            <div class="calculator-text">5 días</div>
+                                            <div class="calculator-text">30 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-details-wrapper">
+                    <div class="arrow left-arrow calc-swiper-prev "></div>
+
+                    <div class="calc-details">
+                        <ul>
+                            <li>
+                                <div class="detail-name">Importe</div>
+                                <div class="value" id="amount-text">200 €</div>
+                            </li>
+                            <li>
+                                <div class="detail-name">Importe Total del Préstamo</div>
+                                <div class="value">ХХ.ХХ €</div>
+                            </li>
+                            <li>
+                                <div class="detail-name">Fecha de devolución</div>
+                                <div class="value">ХХ.ХХ.ХХХХ</div>
+                            </li>
+                        </ul>
+                        <a class="calc-link" href="#">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="12" height="12" rx="6" fill="#CCFF00"/>
+                                <path d="M5.86 4.1C5.60667 4.1 5.40333 4.03333 5.25 3.9C5.09667 3.76 5.02 3.57333 5.02 3.34C5.02 3.11333 5.09667 2.93 5.25 2.79C5.40333 2.64333 5.60667 2.57 5.86 2.57C6.11333 2.57 6.32 2.64333 6.48 2.79C6.64667 2.93 6.73 3.11333 6.73 3.34C6.73 3.57333 6.64667 3.76 6.48 3.9C6.32 4.03333 6.11333 4.1 5.86 4.1ZM5.13 4.8H6.62V10H5.13V4.8Z"
+                                      fill="#2D333A"/>
+                            </svg>
+                            Detalles sobre el préstamo
+                        </a>
+                    </div>
+
+                    <div class="arrow right-arrow calc-swiper-next "></div>
+                </div>
+
+                <button class="btn">Solicitar ahora</button>
+
+                <div class="calc-pagination">
+                    <button class="btn-calc-pagination active"></button>
+                    <button class="btn-calc-pagination"></button>
+                    <button class="btn-calc-pagination"></button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+</div>
+
+<section class="key-words-wrapper">
+    <ul class="key-words-list">
+        <li>Préstamo para vivienda</li>
+        <li>Préstamo rápido</li>
+        <li>Un préstamo con decisión rápida</li>
+        <li>Préstamo sin intereses</li>
+        <li>Crédito para TV</li>
+        <li>Crédito para tratamiento</li>
+        <li class="pos-absolute-item">Préstamo suizo</li>
+
+    </ul>
+</section>
+
+<section class="easy-to-get">
+    <div class="wrapper">
+        <h2>
+            Con nosotros es fácil obtener
+            la cantidad justa
+        </h2>
+
+        <ul class="easy-to-get">
+            <li>
+                <div class="text-wrapper" style="padding-bottom: 0;">
+                    <div class="name">Solicitar</div>
+                    <div class="text">Completa un sencillo formulario en línea en pocos minutos.</div>
+                </div>
+                <img class="desktop" src="img/easy-get-1-img.svg" alt="img">
+            </li>
+            <li class="upper-img">
+                <img class="desktop" src="img/easy-get-2-img.svg" alt="img">
+                <div class="text-wrapper">
+                    <div class="name">Comprobamos su solicitud</div>
+                    <div class="text">Nuestro sistema revisará rápidamente tu solicitud y te informará del resultado.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="text-wrapper">
+                    <div class="name">Recibir el dinero</div>
+                    <div class="text">Una vez aceptado, recibes el dinero en tu cuenta bancaria</div>
+                </div>
+                <img class="desktop" src="img/easy-get-3-img.svg" alt="img">
+            </li>
+        </ul>
+
+        <button class="btn">Solicitar un préstamo</button>
+    </div>
+</section>
+
+<section class="why-we">
+
+    <h2 class="text-center">¿Por qué elegirnos?</h2>
+    <ul>
+        <li>
+            <div class="name">Más rápido que nunca</div>
+            <div class="text">Sin esperas, solucionas tu necesidad en minutos.</div>
+            <img src="img/why-we-item-1-img.svg" alt="img">
+        </li>
+        <li>
+            <div class="name">Confianza, transparencia
+                y sin sorpresas
+            </div>
+            <div class="text">Todo explicado claro desde el principio</div>
+            <img src="img/why-we-item-2-img.svg" alt="img">
+        </li>
+        <li>
+            <div class="name">Mínima documentación</div>
+            <div class="text">Solo se necesitan documentos básicos para confirmar tu identidad.</div>
+            <img src="img/why-we-item-3-img.svg" alt="img">
+        </li>
+    </ul>
+    <button class="btn">Solicitar un préstamo</button>
+
+</section>
+
+<section class="faq">
+    <div class="container">
+        <h2 class="text-center">Preguntas Frecuentes</h2>
+
+        <ul class="faq-list">
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Qué documentos se requieren para presentar la solicitud?</div>
+                    <button class="plusminus"></button>
+                </div>
+
+                <div class="item-open-text hide">
+                    Una vez aprobada la solicitud, el dinero se abonará en su cuenta en un par de horas. Sin retrasos,
+                    todo rápido y fácil.
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Cuánto tiempo se tarda en recibir el dinero?</div>
+                    <button class="plusminus"></button>
+                </div>
+
+                <div class="item-open-text hide">
+                    Una vez aprobada la solicitud, el dinero se abonará en su cuenta en un par de horas. Sin retrasos,
+                    todo rápido y fácil.
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Cuánto puedo solicitar en mi primer préstamo?</div>
+                    <button class="plusminus"></button>
+                </div>
+
+                <div class="item-open-text hide">
+                    Una vez aprobada la solicitud, el dinero se abonará en su cuenta en un par de horas. Sin retrasos,
+                    todo rápido y fácil.
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Hay costes ocultos?</div>
+                    <button class="plusminus"></button>
+                </div>
+
+                <div class="item-open-text hide">
+                    Una vez aprobada la solicitud, el dinero se abonará en su cuenta en un par de horas. Sin retrasos,
+                    todo rápido y fácil.
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Puedo pagar mi préstamo anticipadamente?</div>
+                    <button class="plusminus"></button>
+                </div>
+
+                <div class="item-open-text hide">
+                    Una vez aprobada la solicitud, el dinero se abonará en su cuenta en un par de horas. Sin retrasos,
+                    todo rápido y fácil.
+                </div>
+            </li>
+        </ul>
+
+        <button class="btn">Ver todas las respuestas</button>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="footer-text" href="how-it-works.html">Como funciona?</a></li>
+                    <li><a class="footer-text" href="faq.html">Preguntas frecuentes</a></li>
+                    <li><a class="footer-text" href="blog.html">Blog</a></li>
+                    <li><a class="footer-text" href="contacts.html">Contactar</a></li>
+                    <li><a class="footer-text" href="violations.html">Canal de denuncias</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <h4>Datos de contacto</h4>
+                <ul class="contacts-list">
+                    <li class="footer-text">Teléfono: ххххх ххх</li>
+                    <li class="footer-text">Correo electrónico: info@poshta.es</li>
+                    <li class="footer-text">Horario:</li>
+                    <li class="footer-text">Lunes a viernes: 8:00 - 19:00</li>
+                    <li class="footer-text">Sábado: 8:00 - 15:00</li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="footer-text">Dirección: Calle, código postal, Ciudad, País</div>
+
+                <ul class="links-list">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Сódigo Ético</a></li>
+                    <li><a href="#">Formulario de desistimiento</a></li>
+                    <li><a href="#">Canal de denuncias</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="all-rights">© 2024 - Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<script src="libs/IMask/unpkg/imask.js"></script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/header.js"></script>
+<script src="js/script.js"></script>
+<script src="js/faq-list.js"></script>
+<script src="libs/wow/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

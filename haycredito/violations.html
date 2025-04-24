@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link href="libs/wow/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <title>MFO Spain</title>
+</head>
+<body class="">
+
+
+<div class="backdrop hide"></div>
+
+<div class="tracking-code-modal hide">
+    <div class="wrapper">
+        <div class="name">Este es tu código de seguimiento de la solicitud</div>
+        <button id="close-tracking-code-modal">
+            <img src="img/close-cross.svg" alt="close" >
+        </button>
+    </div>
+    <div class="wrapper">
+        <div class="code">ХХХХХХХХХ</div>
+        <button id="copy-code-tracking-modal">
+            <img src="img/copy.svg" alt="copy" >
+        </button>
+    </div>
+    <div class="text">Guárdalo. Solo con este código podrás consultar el estado de tu solicitud en la página.</div>
+    <button class="btn">Aceptar</button>
+</div>
+
+<header class="">
+    <div class="wrapper">
+        <img  onclick="window.open('index.html', '_blank')" class="logo" src="img/logo.svg" alt="logo">
+
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Para ti </a></li>
+                <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                <li><a  href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">Área cliente</button>
+
+        <div class="header-menu-btn">
+            <button class="lines-button x">
+                <span class="lines"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="side-menu hide">
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Para ti </a></li>
+                <li><a href="how-it-works.html">¿Cómo Funciona?</a></li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="contacts.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">Área cliente</button>
+    </div>
+</header>
+
+
+<section class="violations">
+
+    <div class="violations-channel">
+        <h2>Canal de denuncias</h2>
+
+        <ul class="violations-list">
+            <li>
+                <div class="wrapper">
+                    <div class="name">Información general</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">Esta página está diseñada para garantizar la transparencia y el cumplimiento normativo de Hay Credito. Este canal es una herramienta confidencial para informar sobre posibles infracciones o acciones indebidas que puedan afectar a nuestra empresa, a los clientes o a los empleados.грошщ</div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Quién puede utilizar este canal?</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">
+                    <ul class="text-list">
+                        <li>Empleados de la empresa (permanentes, temporales o contratados)</li>
+                        <li>Contratistas, proveedores y sus empleados</li>
+                        <li>Ex empleados</li>
+                        <li>Personas con relaciones contractuales con Hay Credito</li>
+                        <li>Cualquier parte interesada con información sobre posibles infracciones</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Qué cuestiones se pueden denunciar?</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">
+                    <ul class="text-list">
+                        <li>Incumplimiento de las políticas internas de la empresa</li>
+                        <li>Fraude o irregularidades financieras</li>
+                        <li>Infracciones de la legislación laboral</li>
+                        <li>Abuso de autoridad</li>
+                        <li>Filtración de información confidencial</li>
+                        <li>Cualquier acción que contradiga la legislación española o de la Unión Europea</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">¿Cómo enviar una denuncia?</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">Puedes enviar tu denuncia a través de un formulario específico disponible en esta página. Tu mensaje será tratado de forma confidencial y respetando todas las normas legales.</div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">Recomendaciones para enviar tu denuncia:</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">
+                    <ul class="text-list">
+                        <li>Describe los hechos de manera detallada y precisa</li>
+                        <li>Indica la fecha y el lugar del suceso</li>
+                        <li>Aporta pruebas si las tienes (documentos, fotos, vídeos)</li>
+                        <li>Especifica si hay testigos del incidente</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">Garantías de confidencialidad</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">
+                    <ul class="text-list">
+                        <li>La información proporcionada será tratada respetando todas las normas de privacidad</li>
+                        <li>Puedes realizar tu denuncia de forma anónima</li>
+                        <li>Todas las denuncias serán revisadas por un comité de ética independiente
+                            de Hay Credito</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">Seguimiento del estado de la denuncia</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">Una vez enviado el mensaje, recibirás un código único que te permitirá realizar un seguimiento del estado de tu denuncia. Guarda este código, ya que es la única manera de acceder a tu caso en el futuro.</div>
+            </li>
+            <li>
+                <div class="wrapper">
+                    <div class="name">Base legal</div>
+                    <div class="more"></div>
+                </div>
+                <div class="show-more">Este canal ha sido creado de conformidad con la legislación vigente en España y las normas de la Unión Europea, en particular la Directiva (UE) 2019/1937 sobre la protección de las personas que informan sobre infracciones de la legislación. Te agradecemos tu atención y colaboración para mantener los altos estándares de ética y transparencia en Hay Credito.</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="violations-detail">
+        <div class="user-info">
+            <div class="text to-hide-continue-btn">Rellena tus datos</div>
+            <div class="btns-wrapper to-hide-continue-btn">
+                <button class="btn active">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3346 4.66663L6.35486 11.6464C6.15959 11.8417 5.84301 11.8417 5.64775 11.6464L2.66797 8.66663" stroke="#CCFF00" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Denuncia personalizada
+                </button>
+                <button class="btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3346 4.66663L6.35486 11.6464C6.15959 11.8417 5.84301 11.8417 5.64775 11.6464L2.66797 8.66663" stroke="#CCFF00" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Denuncia anónima
+                </button>
+            </div>
+
+            <div class="text hide to-show-continue-btn">Descripción del incidente</div>
+
+            <div class="" id="user-data">
+                <div class="inputs-wrapper ">
+                    <select  id="type">
+                        <option value="" disabled selected>Tipo de denuncia
+                        <option value="1">1adfasdf</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+
+                    </select>
+                    <input placeholder="Nombre y apellidos" type="text" id="user-name">
+                    <input placeholder="Número de teléfono" type="text" id="phone-number">
+                    <input placeholder="Correo electrónico" type="text" id="email">
+                    <select  id="who-is">
+                        <option value="" disabled selected>Tipo de denuncia
+                        <option value="1">1sadfasfasdf</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button id="continue-btn" class="btn next">Continuar</button>
+            </div>
+            <div class="hide" id="violation-data">
+                <div class="inputs-wrapper">
+                    <input placeholder="Fecha y hora del incidente" type="text" id="date">
+                    <input placeholder="Lugar del incidente" type="text" id="place">
+                    <input placeholder="Descripción detallada de la situación" type="text" id="description">
+                    <input placeholder="Nombres de las personas que pueden estar involucradas" type="text" id="violation-act-names">
+                    <div class="file-upload">
+                        <label>
+                            <input type="file" name="file" id="file-input">
+                            <span>
+                                <img src="img/file-upload-img.svg" alt="upload">
+                                <span class="text">Subir archivo</span>
+                                <span class="underline-text">Haz clic para adjuntar</span>
+                            </span>
+                        </label>
+                    </div>
+<!--                    <input type="text" id="file-name" class="filename" disabled>-->
+                    <input placeholder="Testigos (si los hay)" type="text" id="witnesses">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark "></span>
+                    </label>
+                    <div class="text">Confirmo que doy mi consentimiento para el tratamiento de la información proporcionada</div>
+                </div>
+                <div class="submit-btns-wrapper">
+                    <button class="btn transparent">Atrás</button>
+                    <button class="btn">Enviar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="background-btn-wrapper">
+        <button class="btn">Consultar el estado de la solicitud</button>
+    </div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="footer-text" href="how-it-works.html">Como funciona?</a></li>
+                    <li><a class="footer-text" href="faq.html">Preguntas frecuentes</a></li>
+                    <li><a class="footer-text" href="blog.html">Blog</a></li>
+                    <li><a class="footer-text" href="contacts.html">Contactar</a></li>
+                    <li><a class="footer-text" href="violations.html">Canal de denuncias</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <h4>Datos de contacto</h4>
+                <ul class="contacts-list">
+                    <li class="footer-text">Teléfono: ххххх ххх</li>
+                    <li class="footer-text">Correo electrónico: info@poshta.es</li>
+                    <li class="footer-text">Horario:</li>
+                    <li class="footer-text">Lunes a viernes: 8:00 - 19:00</li>
+                    <li class="footer-text">Sábado: 8:00 - 15:00</li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="footer-text">Dirección: Calle, código postal, Ciudad, País</div>
+
+                <ul class="links-list">
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Сódigo Ético</a></li>
+                    <li><a href="#">Formulario de desistimiento</a></li>
+                    <li><a href="#">Canal de denuncias</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="all-rights">© 2024 - Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<script src="js/violations.js"></script>
+<script src="libs/IMask/unpkg/imask.js"></script>
+<script src="js/header.js"></script>
+<script src="libs/wow/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
