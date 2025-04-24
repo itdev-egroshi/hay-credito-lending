@@ -74,149 +74,149 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // List number pagination
 
-    // const paginationNumbers = document.getElementById("pagination-numbers");
-    // const paginatedList = document.getElementById("paginated-list");
-    // const listItems = paginatedList.querySelectorAll("li");
-    // const nextButton = document.getElementById("blog-list-next");
-    // const prevButton = document.getElementById("blog-list-prev");
-    //
-    // let paginationLimit = 8;
-    // const maxDisplayedPages = 4; // Максимальное количество отображаемых страниц пагинации
-    // let pageCount = Math.ceil(listItems.length / paginationLimit);
-    // let currentPage = 1;
-    //
-    // const disableButton = (button) => {
-    //     button.classList.add("disabled");
-    //     button.setAttribute("disabled", true);
-    // };
-    //
-    // const enableButton = (button) => {
-    //     button.classList.remove("disabled");
-    //     button.removeAttribute("disabled");
-    // };
-    //
-    // const handlePageButtonsStatus = () => {
-    //     if (currentPage === 1) {
-    //         disableButton(prevButton);
-    //     } else {
-    //         enableButton(prevButton);
-    //     }
-    //
-    //     if (currentPage === pageCount) {
-    //         disableButton(nextButton);
-    //     } else {
-    //         enableButton(nextButton);
-    //     }
-    // };
-    //
-    // const handleActivePageNumber = () => {
-    //     document.querySelectorAll(".pagination-number").forEach((button) => {
-    //         button.classList.remove("active-pagination-number");
-    //         const pageIndex = Number(button.getAttribute("page-index"));
-    //         if (pageIndex === currentPage) {
-    //             button.classList.add("active-pagination-number");
-    //         }
-    //     });
-    // };
-    //
-    // const appendPageNumber = (index) => {
-    //     const pageNumber = document.createElement("button");
-    //     pageNumber.className = "pagination-number";
-    //
-    //     pageNumber.innerHTML = index;
-    //
-    //     pageNumber.setAttribute("page-index", index);
-    //     pageNumber.setAttribute("aria-label", "Page " + index);
-    //
-    //     paginationNumbers.appendChild(pageNumber);
-    // };
-    //
-    // const addEllipsis = () => {
-    //     const ellipsis = document.createElement("span");
-    //     ellipsis.className = "pagination-ellipsis";
-    //     ellipsis.innerHTML = "...";
-    //
-    //     paginationNumbers.appendChild(ellipsis);
-    // };
-    //
-    // const getPaginationNumbers = () => {
-    //     paginationNumbers.innerHTML = ""; // Очищаем существующие кнопки пагинации
-    //
-    //     if (pageCount <= maxDisplayedPages) {
-    //         for (let i = 1; i <= pageCount; i++) {
-    //             appendPageNumber(i);
-    //         }
-    //     } else {
-    //         if (currentPage <= Math.ceil(maxDisplayedPages / 2)) {
-    //             for (let i = 1; i <= maxDisplayedPages - 1; i++) {
-    //                 appendPageNumber(i);
-    //             }
-    //             addEllipsis();
-    //             appendPageNumber(pageCount);
-    //         } else if (currentPage >= pageCount - Math.floor(maxDisplayedPages / 2)) {
-    //             appendPageNumber(1);
-    //             addEllipsis();
-    //             for (let i = pageCount - maxDisplayedPages + 2; i <= pageCount; i++) { // Исправлено: изменено maxDisplayedPages + 3 на maxDisplayedPages + 2
-    //                 appendPageNumber(i);
-    //             }
-    //         } else {
-    //             appendPageNumber(1);
-    //             addEllipsis();
-    //             for (let i = currentPage - Math.floor(maxDisplayedPages / 3); i <= currentPage + Math.floor(maxDisplayedPages / 3); i++) {
-    //                 appendPageNumber(i);
-    //             }
-    //             addEllipsis();
-    //             appendPageNumber(pageCount);
-    //         }
-    //     }
-    //
-    //     // Добавляем обработчики событий для новых кнопок пагинации
-    //     document.querySelectorAll(".pagination-number").forEach((button) => {
-    //         const pageIndex = Number(button.getAttribute("page-index"));
-    //         button.addEventListener("click", () => {
-    //             setCurrentPage(pageIndex);
-    //         });
-    //     });
-    // };
-    //
-    // const setCurrentPage = (pageNum) => {
-    //     if(pageNum > pageCount || pageNum < 1) return;
-    //     currentPage = pageNum;
-    //
-    //     handlePageButtonsStatus();
-    //
-    //     const prevRange = (pageNum - 1) * paginationLimit;
-    //     const currRange = pageNum * paginationLimit;
-    //
-    //     listItems.forEach((item, index) => {
-    //         item.classList.add("hide");
-    //         if (index >= prevRange && index < currRange) {
-    //             item.classList.remove("hide");
-    //         }
-    //     });
-    //
-    //     paginationNumbers.innerHTML = "";
-    //     getPaginationNumbers();
-    //     document.querySelectorAll(".pagination-number").forEach((button) => {
-    //         button.addEventListener("click", () => {
-    //             const pageIndex = Number(button.getAttribute("page-index"));
-    //             setCurrentPage(pageIndex);
-    //         });
-    //     });
-    //     handleActivePageNumber();
-    //
-    // };
-    //
-    // getPaginationNumbers();
-    // setCurrentPage(1);
-    //
-    // prevButton.addEventListener("click", () => {
-    //     setCurrentPage(currentPage - 1);
-    // });
-    //
-    // nextButton.addEventListener("click", () => {
-    //     setCurrentPage(currentPage + 1);
-    // });
+    const paginationNumbers = document.getElementById("pagination-numbers");
+    const paginatedList = document.getElementById("paginated-list");
+    const listItems = paginatedList.querySelectorAll("li");
+    const nextButton = document.getElementById("blog-list-next");
+    const prevButton = document.getElementById("blog-list-prev");
+
+    let paginationLimit = 8;
+    const maxDisplayedPages = 4; // Максимальное количество отображаемых страниц пагинации
+    let pageCount = Math.ceil(listItems.length / paginationLimit);
+    let currentPage = 1;
+
+    const disableButton = (button) => {
+        button.classList.add("disabled");
+        button.setAttribute("disabled", true);
+    };
+
+    const enableButton = (button) => {
+        button.classList.remove("disabled");
+        button.removeAttribute("disabled");
+    };
+
+    const handlePageButtonsStatus = () => {
+        if (currentPage === 1) {
+            disableButton(prevButton);
+        } else {
+            enableButton(prevButton);
+        }
+
+        if (currentPage === pageCount) {
+            disableButton(nextButton);
+        } else {
+            enableButton(nextButton);
+        }
+    };
+
+    const handleActivePageNumber = () => {
+        document.querySelectorAll(".pagination-number").forEach((button) => {
+            button.classList.remove("active-pagination-number");
+            const pageIndex = Number(button.getAttribute("page-index"));
+            if (pageIndex === currentPage) {
+                button.classList.add("active-pagination-number");
+            }
+        });
+    };
+
+    const appendPageNumber = (index) => {
+        const pageNumber = document.createElement("button");
+        pageNumber.className = "pagination-number";
+
+        pageNumber.innerHTML = index;
+
+        pageNumber.setAttribute("page-index", index);
+        pageNumber.setAttribute("aria-label", "Page " + index);
+
+        paginationNumbers.appendChild(pageNumber);
+    };
+
+    const addEllipsis = () => {
+        const ellipsis = document.createElement("span");
+        ellipsis.className = "pagination-ellipsis";
+        ellipsis.innerHTML = "...";
+
+        paginationNumbers.appendChild(ellipsis);
+    };
+
+    const getPaginationNumbers = () => {
+        paginationNumbers.innerHTML = ""; // Очищаем существующие кнопки пагинации
+
+        if (pageCount <= maxDisplayedPages) {
+            for (let i = 1; i <= pageCount; i++) {
+                appendPageNumber(i);
+            }
+        } else {
+            if (currentPage <= Math.ceil(maxDisplayedPages / 2)) {
+                for (let i = 1; i <= maxDisplayedPages - 1; i++) {
+                    appendPageNumber(i);
+                }
+                addEllipsis();
+                appendPageNumber(pageCount);
+            } else if (currentPage >= pageCount - Math.floor(maxDisplayedPages / 2)) {
+                appendPageNumber(1);
+                addEllipsis();
+                for (let i = pageCount - maxDisplayedPages + 2; i <= pageCount; i++) { // Исправлено: изменено maxDisplayedPages + 3 на maxDisplayedPages + 2
+                    appendPageNumber(i);
+                }
+            } else {
+                appendPageNumber(1);
+                addEllipsis();
+                for (let i = currentPage - Math.floor(maxDisplayedPages / 3); i <= currentPage + Math.floor(maxDisplayedPages / 3); i++) {
+                    appendPageNumber(i);
+                }
+                addEllipsis();
+                appendPageNumber(pageCount);
+            }
+        }
+
+        // Добавляем обработчики событий для новых кнопок пагинации
+        document.querySelectorAll(".pagination-number").forEach((button) => {
+            const pageIndex = Number(button.getAttribute("page-index"));
+            button.addEventListener("click", () => {
+                setCurrentPage(pageIndex);
+            });
+        });
+    };
+
+    const setCurrentPage = (pageNum) => {
+        if(pageNum > pageCount || pageNum < 1) return;
+        currentPage = pageNum;
+
+        handlePageButtonsStatus();
+
+        const prevRange = (pageNum - 1) * paginationLimit;
+        const currRange = pageNum * paginationLimit;
+
+        listItems.forEach((item, index) => {
+            item.classList.add("hide");
+            if (index >= prevRange && index < currRange) {
+                item.classList.remove("hide");
+            }
+        });
+
+        paginationNumbers.innerHTML = "";
+        getPaginationNumbers();
+        document.querySelectorAll(".pagination-number").forEach((button) => {
+            button.addEventListener("click", () => {
+                const pageIndex = Number(button.getAttribute("page-index"));
+                setCurrentPage(pageIndex);
+            });
+        });
+        handleActivePageNumber();
+
+    };
+
+    getPaginationNumbers();
+    setCurrentPage(1);
+
+    prevButton.addEventListener("click", () => {
+        setCurrentPage(currentPage - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+        setCurrentPage(currentPage + 1);
+    });
 
     function handleBlogListOnResize() {
         if (window.innerWidth <= 800) {
