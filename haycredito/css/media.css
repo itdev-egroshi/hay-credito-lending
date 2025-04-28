@@ -69,6 +69,7 @@
     section.form-bg-screen.first-screen {
         background-size: 1527px 950px;
     }
+
     section.blog-card-open .socials {
         right: 18vw;
     }
@@ -221,6 +222,10 @@
 }
 
 @media (max-width: 1280px) {
+    section.easy-to-get .wrapper .btn {
+        top: 880px;
+    }
+
     section.blog-card-open .socials {
         right: 14vw;
     }
@@ -269,9 +274,6 @@
         margin-bottom: 0 !important;
     }
 
-    section.easy-to-get ul.easy-to-get li:nth-child(1) img {
-        max-width: 180px !important;
-    }
 
     section.why-we {
         margin-top: 0 !important;
@@ -306,6 +308,14 @@
         margin: 0 auto !important;
     }
 
+    section.how-it-works ul.easy-to-get li:nth-child(1) img {
+        max-width: 180px !important;
+    }
+
+    section.how-it-works ul.easy-to-get li {
+        height: 400px;
+    }
+
     ul.easy-to-get li {
         width: 274px;
         min-width: 274px;
@@ -313,19 +323,17 @@
         border-radius: 26px;
     }
 
+    section.how-it-works .easy-to-get li.upper-img img {
+        width: 100%;
+    }
+
     ul.easy-to-get li.upper-img img {
-        position: relative;
-        top: -75px;
+        width: 70%;
     }
 
-    ul.easy-to-get li.upper-img .name {
-        position: relative;
-        top: -75px;
-    }
-
-    ul.easy-to-get li.upper-img .text {
-        position: relative;
-        top: -75px;
+    section.easy-to-get .wrapper .btn {
+        position: initial;
+        transform: translateX(0);
     }
 
     ul.easy-to-get li .name {
@@ -355,6 +363,10 @@
         flex-direction: column;
         align-items: center;
         gap: 32px;
+    }
+
+    .footer-text {
+        text-align: center;
     }
 
     footer .nav-list {
@@ -642,6 +654,68 @@
 }
 
 @media (max-width: 768px) {
+    section.plug h1 {
+        display: none;
+    }
+    section.plug {
+        padding-top: 150px !important;
+    }
+    footer.plug-footer {
+        margin-top: 0 !important;
+    }
+    section.plug .container > .text {
+        display: none;
+    }
+    .giveaway-modal {
+        width: 390px;
+        height: 95vh;
+        top: 3%;
+        overflow: scroll;
+    }
+    .modal.plug-modal {
+        height: auto;
+        overflow: auto;
+    }
+    .giveaway-modal::-webkit-scrollbar {
+        display: none;
+    }
+
+    .giveaway-modal .wrapper {
+        flex-direction: column;
+    }
+
+    .giveaway-modal .wrapper .left-side {
+        height: 454px;
+        border-radius: 24px 24px 0 0;
+        background: url("../img/airpods-img-mobile.png") no-repeat;
+        background-position: -24px 30px;
+        background-size: cover;
+    }
+
+    .giveaway-modal .wrapper {
+        height: auto;
+    }
+
+    .giveaway-modal .wrapper .right-side {
+        border-radius: 0 0 24px 24px;
+    }
+
+    .giveaway-modal h3 {
+        font-size: 20px;
+    }
+
+    .giveaway-modal .text {
+        font-size: 14px;
+    }
+
+    .giveaway-modal .time-left-wrapper .value {
+        font-size: 35px;
+    }
+
+    .giveaway-modal .time-left-wrapper .text {
+        font-size: 13px;
+    }
+
     section.violations .violations-channel {
         padding: 48px;
         border-radius: 24px;
@@ -880,9 +954,13 @@
 }
 
 @media (max-width: 500px) {
+    section.plug {
+        padding-top: 100px !important;
+    }
     section.tracking-code-page {
         min-height: 592px;
     }
+
     section.tracking-code-page h2 {
         font-size: 28px;
     }
@@ -1238,9 +1316,11 @@
     ul.faq-list li {
         gap: 16px;
     }
+
     section.tracking-code-page {
         background: url("../img/tracking-page-mobile-bg.png") no-repeat center center/cover, #EAFF98;
     }
+
     section.violations .violations-channel ul li {
         padding: 24px 16px;
     }
@@ -1367,6 +1447,13 @@
 }
 
 @media (max-width: 400px) {
+    .giveaway-modal {
+        width: 95vw;
+        top: 2%;
+    }
+    .giveaway-modal .wrapper .right-side, .giveaway-modal .wrapper .left-side {
+        padding: 24px;
+    }
     section.form-bg-screen.first-screen .form .rectangle {
         width: 180px;
     }
@@ -1397,6 +1484,11 @@
 }
 
 @media (max-width: 376px) {
+    .giveaway-modal .wrapper .left-side {
+        background-size: 108%;
+        background-position: -26px 53px;
+    }
+
     section.first-screen.form-bg-screen {
         background-size: 93vw 910px;
     }
@@ -1426,6 +1518,7 @@
     section.tracking-code-page {
         margin-top: 120px !important;
     }
+
     section.violations {
         padding-top: 120px !important;
     }
@@ -1516,13 +1609,17 @@
 }
 
 @media (max-width: 320px) {
-
+    .giveaway-modal .wrapper .left-side {
+        background-position: -26px 95px;
+    }
     section.tracking-code-page h2 {
         padding-inline: 16px;
     }
+
     section.tracking-code-page .violation-chat {
         padding: 16px;
     }
+
     section.first-screen.form-bg-screen {
         background-size: 92vw 910px;
     }
