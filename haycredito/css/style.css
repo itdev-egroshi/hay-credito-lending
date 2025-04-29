@@ -289,10 +289,12 @@ header .wrapper {
     align-items: center;
     justify-content: space-between;
 }
+
 header .btns-wrapper {
     display: flex;
     gap: 16px;
 }
+
 header .btn {
     margin: 0 !important;
     background: transparent;
@@ -308,11 +310,13 @@ header .btn {
     text-decoration-skip-ink: none;
     text-transform: initial !important;
 }
+
 header .btn.btn-green {
     background: #CCFF00 !important;
     border: none !important;
     color: #232C39 !important;
 }
+
 header .logo {
     cursor: pointer;
 }
@@ -1776,6 +1780,58 @@ ul.key-words-list li {
     bottom: 9%;
 }
 
+.cookie-configuration {
+    opacity: .9;
+}
+.cookie-configuration .btns-wrapper {
+    opacity: 1;
+}
+.cookie-configuration .wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.cookie-configuration .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cookie-configuration .text {
+    font-weight: 400;
+}
+
+.cookie-configuration .checkmark {
+    left: 0;
+}
+
+.cookie-configuration .checkbox-container {
+    padding-left: 25px;
+}
+
+.cookie-configuration .checkbox-wrapper .agreement-text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.cookie-configuration .checkbox-container input[type="checkbox"]:checked ~ .checkmark {
+    background: #CCFF00;
+}
+
+.cookie-configuration .checkbox-container .checkmark:after {
+    border-color: #232C39;
+}
+
+.cookie-content .cookie-configuration button.btn-transparent {
+    background: transparent;
+    color: #CCFF00;
+}
+
 .cookie-content > .container > .wrapper {
     display: flex;
     align-items: flex-start;
@@ -2656,12 +2712,12 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     bottom: -3px;
 }
 
-span.fw-700 {
+.fw-700 {
     font-weight: 700 !important;
 }
 
-span.green-text {
-    color: #CCFF00;
+.green-text {
+    color: #CCFF00 !important;
 }
 
 .modal {

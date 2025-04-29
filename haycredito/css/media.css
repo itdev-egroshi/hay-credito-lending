@@ -513,6 +513,17 @@
         margin: 24px !important;
     }
 
+    .cookie-content {
+        overflow: scroll;
+        bottom: 2%;
+    }
+    .cookie-content:has(.cookie-configuration:not(.hide)) {
+        height: 95vh;
+    }
+    .cookie-content::-webkit-scrollbar {
+        display: none;
+    }
+
     section.tracking-code-page textarea {
         width: 100%;
         max-width: initial;
@@ -657,25 +668,31 @@
     section.plug h1 {
         display: none;
     }
+
     section.plug {
         padding-top: 150px !important;
     }
+
     footer.plug-footer {
         margin-top: 0 !important;
     }
+
     section.plug .container > .text {
         display: none;
     }
+
     .giveaway-modal {
         width: 390px;
         height: 95vh;
         top: 3%;
         overflow: scroll;
     }
+
     .modal.plug-modal {
         height: auto;
         overflow: auto;
     }
+
     .giveaway-modal::-webkit-scrollbar {
         display: none;
     }
@@ -957,6 +974,7 @@
     section.plug {
         padding-top: 100px !important;
     }
+
     section.tracking-code-page {
         min-height: 592px;
     }
@@ -1034,7 +1052,7 @@
     }
 
     .cookie-content {
-        padding: 24px;
+        padding: 12px;
         border-radius: 26px;
     }
 
@@ -1451,9 +1469,11 @@
         width: 95vw;
         top: 2%;
     }
+
     .giveaway-modal .wrapper .right-side, .giveaway-modal .wrapper .left-side {
         padding: 24px;
     }
+
     section.form-bg-screen.first-screen .form .rectangle {
         width: 180px;
     }
@@ -1612,6 +1632,7 @@
     .giveaway-modal .wrapper .left-side {
         background-position: -26px 95px;
     }
+
     section.tracking-code-page h2 {
         padding-inline: 16px;
     }
