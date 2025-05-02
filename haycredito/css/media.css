@@ -812,7 +812,7 @@
     }
 
     .swiper-slide {
-        left: 492px;
+        left: 31px;
     }
 
     .swiper-slide.active.last {
@@ -1429,7 +1429,7 @@
     }
 
     .swiper-slide {
-        left: 348px;
+        left: 3px;
     }
 
     .swiper-slide.active .calc-name {
@@ -1577,7 +1577,7 @@
 
 @media (max-width: 361px) {
     .swiper-slide {
-        left: 338px;
+        left: 2px;
     }
 
     .socials .name {

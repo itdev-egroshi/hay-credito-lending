@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         swiperStepSize = 275;
     } else if (window.innerWidth <= 430) {
         swiperStepSize = 285;
-        console.log(123);
     } else {
         swiperStepSize = 375
     }
@@ -16,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (window.innerWidth <= 430) {
             swiperStepSize = 285
         } else if (window.innerWidth <= 361) {
-            swiperStepSize = 275
+            swiperStepSize = 280
+        }else if (window.innerWidth <= 320) {
+            swiperStepSize = 270
         } else {
             swiperStepSize = 375
         }
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         preventInteractionOnTransition: true,
         speed: 400,
         spaceBetween: 60,
-        initialSlide: 1,
+        initialSlide: 0,
         autoHeight: false, // Optional: Adjusts height to fit active slide
         direction: 'horizontal',
         effect: 'slide', // Optional: Slide effect

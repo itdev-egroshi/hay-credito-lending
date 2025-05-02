@@ -101,12 +101,24 @@
                     ¡Empieza ahora mismo y gana!</div>
             </div>
             <div class="right-side">
-                <div class="hide" id="form">
+                <div class="" id="form">
                     <h3>Déjanos tus datos y recibe un código con un 99% de descuento en tu préstamo.</h3>
                     <div class="inputs-wrapper">
-                        <input placeholder="Correo electrónico" id="email-giveaway-modal-input" type="text">
-                        <input placeholder="Nombre" id="name-giveaway-modal-input" type="text">
-                        <input placeholder="Número de teléfono" id="phone-number-giveaway-modal-input" type="text">
+                        <div class="input-wrapper">
+                            <input class="error"  required id="email-giveaway-modal-input" type="text">
+                            <label for="email-giveaway-modal-input" class="floating-label">Correo electrónico</label>
+                            <div class="error-text ">Formato de correo electrónico no válido.</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input required  id="name-giveaway-modal-input" type="text">
+                            <label for="name-giveaway-modal-input" class="floating-label">Nombre</label>
+                            <div class="error-text hide"></div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input required  id="phone-number-giveaway-modal-input" type="text">
+                            <label for="phone-number-giveaway-modal-input" class="floating-label">Número de teléfono</label>
+                            <div class="error-text hide">Este número de teléfono ya está registrado</div>
+                        </div>
                     </div>
                     <div class="checkbox-wrapper">
                         <label class="checkbox-container">
@@ -124,7 +136,7 @@
                     </div>
                     <button class="btn">Convertirse en miembro</button>
                 </div>
-                <div class="" id="success">
+                <div class="hide" id="success">
                     <img class="check-img" src="img/check-icon-modal.svg" alt="icon">
                     <h3>¡Gracias por su solicitud!</h3>
                     <div class="text black">Hemos recibido sus datos correctamente.
