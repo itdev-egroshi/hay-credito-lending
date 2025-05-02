@@ -2285,10 +2285,15 @@ option[value=""][disabled] {
 .checkbox-wrapper {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     gap: 4px;
     margin-top: 24px;
 }
-
+.checkbox-wrapper .wrapper {
+    display: flex;
+    background: transparent !important;
+    left: -8px;
+}
 .checkbox-container {
     display: inline-block;
     position: relative !important;
@@ -2784,7 +2789,7 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
 
 .giveaway-modal {
     width: 927px;
-    height: 582px;
+    min-height: 582px;
     border-radius: 24px;
 }
 
@@ -2802,7 +2807,7 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
 
 .giveaway-modal .wrapper .left-side {
     padding: 32px;
-    height: 100%;
+    min-height: 582px;
     max-width: 474px;
     border-radius: 24px 0 0 24px;
     background: url("../img/airpods-img.png");
@@ -2926,7 +2931,7 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     color: #FF5454;
 }
 
-.giveaway-modal .inputs-wrapper .input-wrapper .error-text {
+.giveaway-modal .error-text {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -2934,6 +2939,7 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     letter-spacing: 0%;
     color: #FF5454;
     margin-top: 4px;
+    margin-left: 4px;
 }
 
 .giveaway-modal .btn {
