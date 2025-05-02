@@ -132,6 +132,7 @@ footer .all-rights {
     cursor: pointer;
     border: none;
     background: transparent;
+    user-select: none;
 }
 
 .plusminus.active:before {
@@ -143,6 +144,10 @@ footer .all-rights {
 .plusminus.active:after {
     transform: translatey(-50%) rotate(0);
     background: #A3A3A3;
+}
+
+ul.faq-lists > li > .wrapper > .plusminus:before, ul.faq-lists > li > .wrapper > .plusminus:after {
+    background-color: #68758E;
 }
 
 .plusminus:before, .plusminus:after {
@@ -205,6 +210,45 @@ section.how-it-works {
     margin: 48px auto 0 auto;
 }
 
+ul.faq-lists {
+    margin: 64px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 896px;
+    gap: 64px;
+}
+
+ul.faq-lists >  li.open > .wrapper > .name {
+    color: #939B99;
+}
+
+ul.faq-lists > li.open > .wrapper .plusminus:before, ul.faq-lists li.open > .wrapper .plusminus:after {
+    background-color: #939B99;
+}
+
+ul.faq-lists li > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+}
+
+ul.faq-lists li {
+    cursor: pointer;
+}
+
+ul.faq-lists li .name {
+    font-family: Fixel Text, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #32466C;
+    max-width: 700px;
+}
+
 ul.faq-list {
     margin: 64px auto 0 auto;
     display: flex;
@@ -265,7 +309,9 @@ ul.faq-list li .item-open-text {
     text-decoration-skip-ink: none;
     color: #68758E;
 }
-
+ul.faq-list li .item-open-text img, ul.faq-list li .item-open-text video {
+    width: 100%;
+}
 .text-center {
     text-align: center;
 }
@@ -1783,9 +1829,11 @@ ul.key-words-list li {
 .cookie-configuration {
     opacity: .9;
 }
+
 .cookie-configuration .btns-wrapper {
     opacity: 1;
 }
+
 .cookie-configuration .wrapper {
     display: flex;
     gap: 32px;
@@ -2847,10 +2895,12 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     width: 100%;
     margin: 24px 0;
 }
+
 .giveaway-modal .inputs-wrapper .input-wrapper {
     width: 100%;
     position: relative;
 }
+
 .giveaway-modal .inputs-wrapper .input-wrapper label {
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -2865,10 +2915,12 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     left: 16px;
     transition: all 0.1s ease;
 }
+
 .giveaway-modal .inputs-wrapper .input-wrapper input:focus ~ .floating-label,
 .giveaway-modal .inputs-wrapper .input-wrapper input:not(:focus):valid ~ .floating-label {
     top: 8px;
 }
+
 .giveaway-modal .inputs-wrapper .input-wrapper input.error:focus ~ .floating-label,
 .giveaway-modal .inputs-wrapper .input-wrapper input.error:not(:focus):valid ~ .floating-label {
     color: #FF5454;
@@ -2883,6 +2935,7 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     color: #FF5454;
     margin-top: 4px;
 }
+
 .giveaway-modal .btn {
     margin-top: 24px;
     max-width: 390px;

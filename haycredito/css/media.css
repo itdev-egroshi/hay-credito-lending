@@ -971,6 +971,12 @@
 }
 
 @media (max-width: 500px) {
+    ul.faq-lists li > .wrapper {
+        gap: 16px;
+    }
+    ul.faq-lists li .name {
+        font-size: 20px;
+    }
     section.plug {
         padding-top: 100px !important;
     }
