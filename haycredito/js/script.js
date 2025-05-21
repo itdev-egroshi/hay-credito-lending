@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             swiperStepSize = 285
         } else if (window.innerWidth <= 361) {
             swiperStepSize = 280
-        }else if (window.innerWidth <= 320) {
+        } else if (window.innerWidth <= 320) {
             swiperStepSize = 270
         } else {
             swiperStepSize = 375
@@ -104,4 +104,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateNavButtons();
 
+
+    // COPY PROMO
+
+    document.querySelector('#copy-promo-btn').addEventListener('click', () => navigator.clipboard.writeText(document.querySelector('#promo-to-copy').innerText));
+
+
+    // INFO TEXT TOGGLE
+
+    const
+        toggleText = document.querySelector('#info-text-appearance-toggle'),
+        toggleBtn = document.querySelector('#info-text-toggle-btn'),
+        cuttedText = document.querySelector('#cutted-text');
+
+    toggleBtn.addEventListener('click', () => {
+        toggleText.classList.toggle('hide');
+        cuttedText.classList.toggle('cutted-text');
+        if (toggleText.classList.contains('hide')) {
+            toggleBtn.querySelector('.text').innerHTML = 'Maximizar';
+        } else {
+            toggleBtn.querySelector('.text').innerHTML = 'Minimizar';
+        }
+
+        toggleBtn.querySelector('svg').classList.toggle('rotate-180');
+    });
 });

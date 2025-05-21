@@ -219,7 +219,7 @@ ul.faq-lists {
     gap: 64px;
 }
 
-ul.faq-lists >  li.open > .wrapper > .name {
+ul.faq-lists > li.open > .wrapper > .name {
     color: #939B99;
 }
 
@@ -309,9 +309,11 @@ ul.faq-list li .item-open-text {
     text-decoration-skip-ink: none;
     color: #68758E;
 }
+
 ul.faq-list li .item-open-text img, ul.faq-list li .item-open-text video {
     width: 100%;
 }
+
 .text-center {
     text-align: center;
 }
@@ -931,6 +933,7 @@ section.first-screen .text-wrapper {
 }
 
 .calc-wrapper .calc-details a {
+    margin-top: 8px;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -953,7 +956,20 @@ section.first-screen .text-wrapper {
     justify-content: space-between;
 }
 
+.calc-wrapper .calc-details ul li:nth-child(2) {
+    max-width: 209px;
+    width: 100%;
+}
+
+.calc-wrapper .calc-details ul li .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .calc-wrapper .calc-details .detail-name {
+    max-width: 150px;
+    width: 100%;
     font-family: Fixel Text, sans-serif;
     font-size: 10px;
     font-weight: 700;
@@ -962,7 +978,6 @@ section.first-screen .text-wrapper {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #E1E2E8;
-    max-width: 58px;
 }
 
 .calc-wrapper .calc-details .value {
@@ -973,6 +988,41 @@ section.first-screen .text-wrapper {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #CCFF00;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-wrap: nowrap;
+}
+
+.calc-wrapper .calc-details .value #copy-promo-btn {
+    cursor: pointer;
+}
+
+.calc-wrapper .calc-details .past-price {
+    font-family: Fixel Text, sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #68758E;
+    position: relative;
+    text-align: right;
+}
+
+.calc-wrapper .calc-details .past-price img {
+    position: absolute;
+    left: 36%;
+    top: 20%;
+}
+
+.calc-wrapper .calc-details .new-price {
+    font-family: Fixel Text, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: right;
     color: #CCFF00;
 }
 
@@ -1801,7 +1851,7 @@ ul.key-words-list li {
 }
 
 .backdrop {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     mix-blend-mode: multiply;
     height: 100vh;
     width: 100%;
@@ -2289,11 +2339,13 @@ option[value=""][disabled] {
     gap: 4px;
     margin-top: 24px;
 }
+
 .checkbox-wrapper .wrapper {
     display: flex;
     background: transparent !important;
     left: -8px;
 }
+
 .checkbox-container {
     display: inline-block;
     position: relative !important;
@@ -2778,7 +2830,7 @@ section.tracking-code-page .textarea-wrapper .action-btns-wrapper .file-upload l
     transform: translateX(-50%);
     left: 50%;
     top: 20%;
-    z-index: 20;
+    z-index: 50;
 }
 
 .modal.plug-modal {
@@ -3101,4 +3153,146 @@ section.plug .plug-modal #success .text.black {
     color: #68758E;
     font-size: 16px;
     opacity: 1;
+}
+
+.promo-modal {
+    top: 10%;
+    max-width: 474px;
+    width: 100%;
+    border-radius: 24px;
+    background: radial-gradient(30.68% 37.07% at 56.34% 50%, #3A4454 0%, #2E353F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    padding: 32px 0;
+}
+
+.promo-modal #close-promo-modal-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    cursor: pointer;
+}
+
+.promo-modal h4 {
+    font-family: Faculty Glyphic, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    padding: 0 32px;
+}
+
+.promo-modal .text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #68758E;
+    margin-top: 16px;
+    padding: 0 32px;
+    margin-bottom: 18px;
+}
+
+.promo-modal .promo-img {
+    position: relative;
+    margin-top: -30px;
+    z-index: -1;
+    width: 100%;
+}
+
+.promo-modal > .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promo-modal .btn {
+    cursor: pointer;
+    max-width: 394px;
+    width: 100%;
+    height: 59px;
+    background: #CCFF00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0;
+    color: #2D333A;
+    border: none;
+    margin-top: -90px;
+}
+
+.promo-modal .btn:hover {
+    transform: scale(1.01);
+}
+
+
+section.info .name {
+    font-family: Faculty Glyphic, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #68758E;
+    margin-bottom: 16px;
+}
+section.info .text.cutted-text {
+    height: 47px;
+    overflow: hidden;
+}
+section.info .text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #939B99;
+    margin-bottom: 32px;
+    height: auto;
+    overflow: auto;
+}
+
+section.info #info-text-appearance-toggle {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+section.info#info-text-appearance-toggle.hide {
+    max-height: 0;
+    opacity: 0;
+}
+section.info #info-text-toggle-btn .text {
+    margin: 0;
+}
+section.info #info-text-toggle-btn {
+    display: flex;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    font-family: Faculty Glyphic, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #68758E;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
 }

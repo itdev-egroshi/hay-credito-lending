@@ -21,6 +21,7 @@
     ul.best-blog-list {
         transform: scale(.95);
     }
+
     section.form-bg-screen.blog {
         padding-bottom: 130px !important;
     }
@@ -51,6 +52,7 @@
     ul.best-blog-list {
         transform: scale(.85);
     }
+
     section.form-bg-screen.blog {
         padding-bottom: 100px !important;
     }
@@ -85,9 +87,11 @@
     ul.best-blog-list {
         transform: scale(.75);
     }
+
     section.form-bg-screen.blog {
         padding-bottom: 60px !important;
     }
+
     section.blog-card-open .socials {
         right: 18vw;
     }
@@ -210,15 +214,17 @@
     ul.best-blog-list {
         transform: scale(.70);
     }
+
     section.form-bg-screen.blog {
         padding-bottom: 20px !important;
     }
+
     section.blog-card-open .socials {
         right: 14vw;
     }
 
     section.form-bg-screen.first-screen {
-        background-size: 1293px 1000px;
+        background-size: 1293px 1034px;
     }
 
     ul.key-words-list {
@@ -248,7 +254,7 @@
     }
 
     section.form-bg-screen.first-screen {
-        background-size: 1200px 1000px;
+        background-size: 1200px 1040px;
     }
 
     ul.key-words-list {
@@ -430,7 +436,7 @@
 
     section.form-bg-screen.first-screen {
         background: url("../img/first-screen-bg-1024.png");
-        background-size: 93vw 1164px;
+        background-size: 93vw 1220px;
         margin-bottom: 0 !important;
         padding-bottom: 230px !important;
     }
@@ -564,13 +570,13 @@
 
 @media (max-width: 853px) {
     section.first-screen.form-bg-screen {
-        background-size: 92vw 1164px;
+        background-size: 92vw 1220px;
     }
 }
 
 @media (max-width: 800px) {
     section.first-screen.form-bg-screen {
-        background-size: 92vw 1174px;
+        background-size: 92vw 1250px;
         padding-bottom: 250px !important;
     }
 
@@ -769,7 +775,7 @@
 
 @media (max-width: 720px) {
     section.first-screen.form-bg-screen {
-        background-size: 91vw 1174px;
+        background-size: 91vw 1250px;
     }
 
     .socials .name {
@@ -910,7 +916,7 @@
     section.first-screen.form-bg-screen {
         background: url("../img/first-screen-bg-mobile.png");
         padding-bottom: 220px !important;
-        background-size: 89vw 1000px;
+        background-size: 89vw 1081px;
     }
 
     section.first-screen .text-wrapper {
@@ -990,11 +996,44 @@
 @media (max-width: 540px) {
     section.first-screen.form-bg-screen {
         padding-bottom: 270px !important;
-        background-size: 88vw 1050px;
+        background-size: 88vw 1121px;
     }
 }
 
 @media (max-width: 500px) {
+    section.info {
+        padding: 64px 0 !important;
+    }
+
+    section.info .name {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    section.info .text {
+        font-size: 16px;
+    }
+
+    .promo-modal {
+        width: 95vw;
+    }
+
+    .promo-modal h4 {
+        font-size: 20px;
+    }
+
+    .promo-modal h4, .promo-modal .text {
+        padding: 0 24px;
+    }
+
+    .promo-modal .btn {
+        width: 85vw;
+    }
+
+    .promo-modal .promo-img {
+
+    }
+
     ul.faq-lists li > .wrapper {
         gap: 16px;
     }
@@ -1052,7 +1091,7 @@
     section.first-screen.form-bg-screen {
         background: url("../img/first-screen-bg-mobile.png");
         padding-bottom: 354px !important;
-        background-size: 94vw 1050px;
+        background-size: 94vw 1131px;
     }
 
     section.form-bg-screen {
@@ -1377,6 +1416,15 @@
 }
 
 @media (max-width: 430px) {
+    .promo-modal #close-promo-modal-btn {
+        top: 18px;
+        right: 12px;
+    }
+
+    .promo-modal .btn {
+        margin-top: -60px;
+    }
+
     .tracking-code-modal {
         width: 95vw;
     }
@@ -1388,7 +1436,7 @@
     section.first-screen.form-bg-screen {
         background: url("../img/first-screen-bg-mobile.png");
         padding-bottom: 40px !important;
-        background-size: 94vw 910px;
+        background-size: 94vw 1031px;
     }
 
     section.first-screen .text-wrapper {
@@ -1438,6 +1486,21 @@
 
     .calc-wrapper .calc-details {
         width: 280px;
+    }
+
+    .calc-wrapper .calc-details ul {
+        flex-direction: column-reverse;
+    }
+
+    .calc-wrapper .calc-details ul li:nth-child(2) {
+        max-width: 280px;
+    }
+
+    .calc-wrapper .calc-details ul li:nth-child(1) {
+        max-width: 280px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .arrow.left-arrow {
@@ -1542,7 +1605,7 @@
     }
 
     section.first-screen.form-bg-screen {
-        background-size: 93vw 910px;
+        background-size: 93vw 1031px;
     }
 
     .arrow.left-arrow {
@@ -1674,7 +1737,7 @@
     }
 
     section.first-screen.form-bg-screen {
-        background-size: 92vw 910px;
+        background-size: 92vw 1041px;
     }
 
     .arrow.left-arrow {
